@@ -1,8 +1,5 @@
 buildscript {
     repositories {
-        maven { url "https://artifactory.davita.com/artifactory/libs-release" }
-        maven { url "https://artifactory.davita.com/artifactory/libs-snapshot" }
-        maven { url "https://artifactory.davita.com/artifactory/libs-snapshot-local" }
         mavenLocal()
     }
 }

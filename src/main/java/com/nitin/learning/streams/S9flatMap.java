@@ -26,11 +26,11 @@ public class S9flatMap {
                 .flatMap(x -> Stream.of(x.toUpperCase(), String.valueOf(x.length()), x.toLowerCase()))
                 .collect(Collectors.toList());
 
-        System.out.println(l);
+        System.out.println(l.size());
 
         l.stream()
                 //.map(str -> str.toLowerCase())
-                .flatMap(x -> Stream.of(x.toLowerCase(), x.toUpperCase(), x.length()))
+             //   .flatMap(x -> Stream.of(x.toLowerCase(), x.toUpperCase(), x.length()))
                 .forEach(x -> System.out.print(x + ", "));
     }
 }
