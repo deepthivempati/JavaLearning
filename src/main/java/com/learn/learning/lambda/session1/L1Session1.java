@@ -38,7 +38,6 @@ interface MyFunctionalInterface0{
     void doSomework();
 }
 
-@FunctionalInterface
 interface MyFunctionalInterface1{
     Integer doSomeJob(Integer a);
 }

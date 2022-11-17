@@ -1,9 +1,6 @@
 package com.learn.learning.collectionFramework;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class SetLearn {
     public static void main(String[] args) {

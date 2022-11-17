@@ -4,8 +4,10 @@ import com.learn.utilities.entity.EmployeeSimple;
 import com.learn.utilities.SampleData;
 
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 public class FunctionLearning {
@@ -26,17 +28,29 @@ public class FunctionLearning {
         Predicate<EmployeeSimple> salaryNotNull = emp -> null != emp.getSalary();
         Predicate<EmployeeSimple> ageNotNull = emp -> null != emp.getAge();
 
-
         List<String> finalList = list.stream()
                 //.filter(nameNotNull.or(salaryNotNull).or(ageNotNull))
-                .filter(nameNotNull)
+                .filter( emp -> null != emp.getName()
+                )
                 .filter(salaryNotNull)
                 .filter(ageNotNull)
-                .map(stud -> transformer.apply(stud))
+                //.map(stud -> transformer.apply(stud))
+                .map(transformer)
                 //.map(transformer)
                 .collect(Collectors.toList());
 
-        System.out.println(finalList);
+       // System.out.println(finalList);
+
+        Consumer<EmployeeSimple> consumer = getEmployeeSimpleConsumer();
+        list.stream().forEach(oneemp -> consumer.accept(oneemp));
+
+        list.stream().forEach(consumer);
+
+        list.stream().forEach(getEmployeeSimpleConsumer());
+    }
+
+    private static Consumer<EmployeeSimple> getEmployeeSimpleConsumer() {
+        return (employeeSimple) -> System.out.println(employeeSimple.getName());
     }
 }
 
