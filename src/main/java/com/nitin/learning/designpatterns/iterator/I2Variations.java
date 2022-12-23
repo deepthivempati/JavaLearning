@@ -1,4 +1,4 @@
-package com.nitin.learning.iterator;
+package com.nitin.learning.designpatterns.iterator;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nitin.utilities.entity.Card;
@@ -6,7 +6,6 @@ import com.nitin.utilities.entity.Card;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
