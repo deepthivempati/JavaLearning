@@ -4,5 +4,6 @@ public class Runner {
 
     public static void main(String[] args) {
         Strategy s = new Strategy();
+
     }
 }
