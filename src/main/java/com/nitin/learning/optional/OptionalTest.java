@@ -1,10 +1,5 @@
-package com.nitin.learning.Optional;
+package com.nitin.learning.optional;
 
-import lombok.AllArgsConstructor;
-import lombok.ToString;
-
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 

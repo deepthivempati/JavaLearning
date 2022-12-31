@@ -1,9 +1,8 @@
-package com.nitin.learning.Optional;
+package com.nitin.learning.optional;
 
 import com.nitin.utilities.SampleData;
 import com.nitin.utilities.entity.EmployeeSimple;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;

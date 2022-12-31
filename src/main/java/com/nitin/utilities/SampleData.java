@@ -95,13 +95,17 @@ public class SampleData {
     }
 
     private static List<EmployeeSimple> SIMPLE_EMPLOYEES = Arrays.asList(
-                new EmployeeSimple("John", 20, Double.valueOf("65000"), 'C', 5),
-                new EmployeeSimple("Wayne", 20, Double.valueOf("65430"), 'C', 4),
-                new EmployeeSimple("Dow", 30, Double.valueOf("74445"), 'B', 6),
-                new EmployeeSimple("Jane", 35, Double.valueOf("76546"), 'B', 5),
-                new EmployeeSimple("Don", null, Double.valueOf("90000"), 'A', 10),
-                new EmployeeSimple(),//Testing for nulls
-                new EmployeeSimple(null, 35, Double.valueOf("90000"), 'A', 10)
+            new EmployeeSimple("John", 20, Double.valueOf("65000"), 'C', 5),
+            new EmployeeSimple("Wayne", 20, Double.valueOf("65430"), 'C', 4),
+            new EmployeeSimple("Dow", 30, Double.valueOf("74445"), 'B', 6),
+            new EmployeeSimple("Jane", 35, Double.valueOf("76546"), 'B', 5),
+            new EmployeeSimple("Don", 35, Double.valueOf("90000"), 'A', 10),
+            new EmployeeSimple("Wayne", 20, Double.valueOf("65430"), 'C', 4),
+            new EmployeeSimple("John", 23, Double.valueOf("75430"), 'B', 5),
+            new EmployeeSimple("John", 32, Double.valueOf("85430"), 'C', 12),
+            new EmployeeSimple(),//Testing for nulls
+            new EmployeeSimple(null, 99, Double.valueOf("85430"), 'C', 12),
+            new EmployeeSimple(null, 35, Double.valueOf("90000"), 'A', 10)
         );
 
     public static List<EmployeeSimple> getSimpleEmployees() {

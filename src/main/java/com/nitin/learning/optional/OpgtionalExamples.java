@@ -1,4 +1,4 @@
-package com.nitin.learning.Optional;
+package com.nitin.learning.optional;
 
 import org.apache.commons.lang3.StringUtils;
 

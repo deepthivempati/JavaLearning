@@ -1,14 +1,14 @@
 package com.nitin.utilities.entity.dto;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.ZonedDateTime;
 
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class CovidIndiaTransformed {
     private String country;
     //public String countryCode;

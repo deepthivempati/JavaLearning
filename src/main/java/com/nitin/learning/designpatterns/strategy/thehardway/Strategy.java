@@ -1,12 +1,8 @@
 package com.nitin.learning.designpatterns.strategy.thehardway;
 
-//@Setter
-public class Strategy {
 
-    private ContextNitin context;//this is composition : HINT
+import java.util.List;
 
-    public void setStrategy(ContextNitin context){
-        this.context = context;
-    }
-
+public interface Strategy {
+    public <T> void sort(List<T> list);//execute method()
 }
