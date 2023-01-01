@@ -40,13 +40,12 @@ public class F3FlatMapping {
                     .filter(Objects::nonNull).filter(emp -> null != emp.getAge()).filter(emp -> null != emp.getName())
                     .collect(groupingBy(EmployeeSimple::getAge,
                                     mapping(EmployeeSimple::getName,
-                                            //filtering(name -> name.length() < 4,
-                                                    mapping(name -> List.of(name.split("")).stream(), toList())
-                                            //)
+                                            filtering(name -> name.length() < 4,toList())
+                                                    //mapping(name -> List.of(name.split("")).stream(), toList())
+                                            )
                                     )
                             )
-                    )
-        );
+                    );
 
     }
 
