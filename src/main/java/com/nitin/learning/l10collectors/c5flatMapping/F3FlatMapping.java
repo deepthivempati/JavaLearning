@@ -1,4 +1,4 @@
-package com.nitin.learning.l10collectors.c4filtering;
+package com.nitin.learning.l10collectors.c5flatMapping;
 
 import com.nitin.utilities.SampleData;
 import com.nitin.utilities.entity.EmployeeSimple;
@@ -41,7 +41,7 @@ public class F3FlatMapping {
                     .collect(groupingBy(EmployeeSimple::getAge,
                                     mapping(EmployeeSimple::getName,
                                             //filtering(name -> name.length() < 4,
-                                                    mapping(name -> List.of(name.split("")).stream(), toList())
+                                                    flatMapping(name -> List.of(name.split("")).stream(), toList())
                                             //)
                                     )
                             )

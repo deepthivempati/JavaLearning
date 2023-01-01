@@ -1,4 +1,4 @@
-package com.nitin.learning.l10collectors.collect;
+package com.nitin.learning.l10collectors.c1collect;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 /**
  * Created by Nitin Chaurasia on 1/31/18 at 12:05 AM.
  */
-public class S1collect {
+public class S1collectToListMap {
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();
         list.add("Pawan");

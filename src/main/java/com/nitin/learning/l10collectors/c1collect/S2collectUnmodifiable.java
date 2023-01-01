@@ -1,4 +1,4 @@
-package com.nitin.learning.l10collectors.collect;
+package com.nitin.learning.l10collectors.c1collect;
 
 import com.nitin.utilities.SampleData;
 import com.nitin.utilities.entity.EmployeeSimple;
@@ -6,7 +6,7 @@ import com.nitin.utilities.entity.EmployeeSimple;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class S2collect {
+public class S2collectUnmodifiable {
     public static void main(String[] args) {
         List<EmployeeSimple> simpleEmployees = SampleData.getSimpleEmployees();
         List<EmployeeSimple> collect = simpleEmployees

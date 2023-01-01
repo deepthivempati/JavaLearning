@@ -1,4 +1,4 @@
-package com.nitin.learning.l10collectors.collect;
+package com.nitin.learning.l10collectors.c1collect;
 
 import lombok.Builder;
 import lombok.Getter;

@@ -1,9 +1,9 @@
-package com.nitin.learning.l10collectors.collect;
+package com.nitin.learning.l10collectors.c1collect;
 
 import java.util.Arrays;
 import java.util.Collections;
 
-public class ParentDtoTest {
+public class ParentDtoSingletonList {
     public static void main(String[] args) {
         ParentDto parentDto = ParentDto.builder()
                 .integerList(Arrays.asList(3,1,8,6,9,7))

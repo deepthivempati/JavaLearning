@@ -1,4 +1,4 @@
-package com.nitin.learning.l10collectors.collect;
+package com.nitin.learning.l10collectors.c3groupby;
 
 import com.nitin.utilities.SampleData;
 import com.nitin.utilities.entity.EmployeeSimple;

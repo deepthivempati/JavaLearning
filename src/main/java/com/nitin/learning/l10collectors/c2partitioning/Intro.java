@@ -22,8 +22,7 @@ public class Intro {
                 .filter(Objects::nonNull).filter(emp -> null != emp.getAge())
                 .filter(emp -> null != emp.getAge())
                 //.collect(partitioningBy(x -> evenAgedEmpPredicate.test(x)));
-                .collect(partitioningBy(evenAgedEmpPredicate));
-
+                .collect(partitioningBy(evenAgedEmpPredicate));//⌘Cmd ⌥Opt V	Declare the variable
 
         System.out.println(listMap);
 
