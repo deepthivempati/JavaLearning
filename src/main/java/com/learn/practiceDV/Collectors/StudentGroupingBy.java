@@ -8,7 +8,7 @@ import static com.learn.practiceDV.Collectors.StudentPartitioningBy.students;
 import static java.util.stream.Collectors.*;
 
 // finding the student with the best and worst grade in respective city
-public class StudentGroupingByReduce {
+public class StudentGroupingBy {
     public static void main(String[] args) {
         Map<String, Optional<Student>> collect = students
                 .stream()
