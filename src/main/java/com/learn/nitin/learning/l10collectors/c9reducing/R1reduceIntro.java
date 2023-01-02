@@ -13,6 +13,8 @@ public class R1reduceIntro {
         //Find total sum of salaries of each employee
         sumWithReduce(employees);
         sumWithOutReduce(employees);
+
+
     }
 
 
