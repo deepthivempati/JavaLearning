@@ -12,14 +12,15 @@ import static java.util.stream.Collectors.partitioningBy;
             System.out.println(students
                         .stream()
                         .collect(partitioningBy(ageGtr22))
-                                //reducing(BinaryOperator.maxBy(Comparator.comparing(Student::getAvgGrade))))
         );
         }
 public static List<Student> students = Arrays.asList(
-        new Student("Deepthi", "Khammam", 4.75, 24),
+        new Student("Deepthi", "Khammam", 4.70, 24),
         new Student("Divya", "Warangal", 4.80, 23),
         new Student("Spandana", "Khammam", 4.50, 24),
-        new Student("Haripriya", "Warangal", 4.60, 23));
+        new Student("Haripriya", "Warangal", 4.60, 23),
+        new Student("abc", "Khammam", 4.90, 24),
+        new Student("xyz", "Warangal", 4.60, 23));
 
 
 
