@@ -1,4 +1,4 @@
-package com.learn.nitin.learning.l11generics;
+package com.learn.nitin.learning.zzz_generics;
 
 import java.util.ArrayList;
 import java.util.Arrays;

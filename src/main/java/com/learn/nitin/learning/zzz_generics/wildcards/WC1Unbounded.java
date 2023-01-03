@@ -1,4 +1,4 @@
-package com.learn.nitin.learning.l11generics.wildcards;
+package com.learn.nitin.learning.zzz_generics.wildcards;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;

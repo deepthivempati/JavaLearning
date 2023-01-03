@@ -1,4 +1,4 @@
-package com.learn.nitin.learning.l12exception;
+package com.learn.nitin.learning.zzz_exception;
 
 public class Driver {
     public static void main(String[] args) {

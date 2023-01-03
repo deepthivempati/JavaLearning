@@ -1,4 +1,4 @@
-package com.learn.nitin.learning.l12exception;
+package com.learn.nitin.learning.zzz_exception;
 
 //User defined exceptions should always be CHECKED
 public class CannotEatException extends Exception{

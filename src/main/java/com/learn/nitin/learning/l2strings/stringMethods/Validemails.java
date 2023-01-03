@@ -1,6 +1,6 @@
 package com.learn.nitin.learning.l2strings.stringMethods;
 
-import com.learn.nitin.learning.l12exception.IncorrectEmailIdException;
+import com.learn.nitin.learning.zzz_exception.IncorrectEmailIdException;
 
 import java.util.ArrayList;
 import java.util.Arrays;

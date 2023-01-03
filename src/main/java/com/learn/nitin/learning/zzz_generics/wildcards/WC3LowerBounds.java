@@ -1,4 +1,4 @@
-package com.learn.nitin.learning.l11generics.wildcards;
+package com.learn.nitin.learning.zzz_generics.wildcards;
 
 import java.util.*;
 import java.util.function.Function;
