@@ -14,7 +14,7 @@ public class StudentReducingMaxBy {
     public static void main(String[] args) {
         reducingToAvoidOptional(); //Reducing with identity returns a <T>, reducing without identity returns a Optional<T>
         reducingWithoutGroupingBy(); //without groupingBy also we can use reducing() method
-        reducingWithGroupingBy();
+        reducingWithGroupingBy(); // with groupingBy also we can use reducing() method
     }
 
     private static void reducingToAvoidOptional() {
@@ -61,3 +61,7 @@ public class StudentReducingMaxBy {
 
     }
 }
+
+// Downstream --> a collector which will accept mapped values Returns: a collector which applies the mapping function to the input elements and provides the mapped results to the downstream collector.
+// BinaryOperator --> BinaryOperator that returns the greater of two elements according to a specified Comparator. it has minBy and maxBy methods.
+// Diff between reduce & reducing --> reduce will be used a method, reducing will be used as a parameter. reduce is a method, reducing is a collector.
