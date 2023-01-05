@@ -39,7 +39,7 @@ public class StudentReducingMaxBy {
                                 0.0,
                                 Student::getAvgGrade,
                                 maxBy(Comparator.comparing(Function.identity()))
-                                //maxBy(Comparator.comparingDouble(value -> value)) // why not Function.identity()
+                                //maxBy(Comparator.comparingDouble(value -> value)) // TODO: why not Function.identity()
                         )
                 );
         System.out.println(studentDataDouble);

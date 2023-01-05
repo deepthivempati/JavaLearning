@@ -1,4 +1,4 @@
-package com.learn.nitin.learning.parallelStreams;
+package com.learn.nitin.learning.I11parallelStreams;
 
 import com.learn.nitin.utilities.MultiThreadUtility;
 import com.learn.nitin.utilities.PerformanceUtility;

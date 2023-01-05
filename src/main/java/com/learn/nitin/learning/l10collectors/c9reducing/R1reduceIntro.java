@@ -36,7 +36,7 @@ public class R1reduceIntro {
                         .reduce(0.0, Double::sum);
         //.orElse(-1D);
 
-        //Reduce with identity returbs a <T>, reduce without identity returns a Optional<T>
+        //Reduce with identity returns a <T>, reduce without identity returns a Optional<T>
 
         System.out.println(totalSalary);
     }
