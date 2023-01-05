@@ -11,8 +11,16 @@ public class A1Intro {
        // completableFuture.thenAccept(x -> System.out.println(x));
 
         completableFuture
-                //.thenApply(x -> Integer.parseInt(String.valueOf(x)))
+                .thenApply(x -> Integer.parseInt(String.valueOf(x)))
+                .exceptionally(throwable -> {
+                    System.out.println(throwable.getMessage());
+                    return -1;
+                })
                 .thenAccept(x -> System.out.println(x))//Behaves like ForEach, but not a reduction operation.
+                .exceptionally(throwable -> {
+                    System.out.println(throwable.getMessage());
+                    return null;
+                })
                 .thenRun(() -> System.out.println("Can continue"))
                 .thenRun(() -> System.out.println("Even further"))
                 .thenAccept(x -> System.out.println(x));
