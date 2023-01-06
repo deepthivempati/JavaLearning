@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 public class PS1Intro {
     public static void main(String[] args) {
-        List<Integer> list = List.of(0,1,2,3,4,5,6,7,9,8);
+        List<Integer> list = List.of(0,1,2,3);
 
         //sequentialStream(list);
         //parallelStreamwithoutOrder(list);
@@ -37,7 +37,7 @@ public class PS1Intro {
 
     private static void sequentialPitfall(List<Integer> list) {
         list.parallelStream()//use with collections
-                .sequential()
+                .sequential() // this becomes redundant since parallel style is near to reduction.
                 .map(num -> incrementAndDelay(num))
                 .parallel()//The method closest to the reduction determnins the style sequential or parallel
                 .forEachOrdered(num -> getPrint(num));
