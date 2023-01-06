@@ -11,11 +11,13 @@ public class A1Intro {
        // completableFuture.thenAccept(x -> System.out.println(x));
 
         completableFuture
+                //.thenApply(x ->  x.intValue() )
                 .thenApply(x -> Integer.parseInt(String.valueOf(x)))
                 .exceptionally(throwable -> {
                     System.out.println(throwable.getMessage());
-                    return -1;
+                    return 0;//Default value to return if the
                 })
+                .thenApply(x -> 2/x)
                 .thenAccept(x -> System.out.println(x))//Behaves like ForEach, but not a reduction operation.
                 .exceptionally(throwable -> {
                     System.out.println(throwable.getMessage());

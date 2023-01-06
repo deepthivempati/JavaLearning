@@ -29,9 +29,7 @@ Async programming
     * resolve. reject. pending
 
 data track    ---------f-----f----------f----------
-
                               \        /
-
 error track   -----------------e------f------------
 
 * Exception handling (imperative style) in functional programming is mutually exclusive
