@@ -9,3 +9,5 @@ public class Matrix {
         System.out.println("Fork Join Pool : " + ForkJoinPool.commonPool());
     }
 }
+
+//windows pc memory specifications: https://www.windowscentral.com/how-get-full-memory-specs-speed-size-type-part-number-form-factor-windows-10
