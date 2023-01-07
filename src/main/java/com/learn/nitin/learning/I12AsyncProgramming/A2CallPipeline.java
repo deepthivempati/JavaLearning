@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
+import static com.learn.nitin.utilities.MultiThreadUtility.delay;
+
 public class A2CallPipeline {
     public static void main(String[] args) {
         //intro();
@@ -28,13 +30,14 @@ public class A2CallPipeline {
 
         System.out.println("Pipeline is built....");
 
+        delay(3000);
         future.complete(InternetUtilities.bringWordListFromNet());//Evaluates lazily. The pipeline executes from this point on
 
         System.out.println("Post Future");
     }
 
     private static String getTransformedString(String word) {
-        MultiThreadUtility.delay(10);
+        delay(1000);
         return word.toUpperCase();
     }
 
@@ -42,12 +45,18 @@ public class A2CallPipeline {
         CompletableFuture<Integer> future = new CompletableFuture<>();
 
         future
-                .thenApply(data -> data*2)
+                .thenApply(data -> 2/data*2)
+                .exceptionally(throwable -> {
+                    System.out.println(throwable.getMessage());
+                    return 9;
+                })
                 .thenApply(data -> data+1)
-                .thenAccept(data -> System.out.println("Result from Future " + data));
+                .thenAccept(data -> System.out.println("Result from Future " + data))
+                .thenRun(()-> System.out.println("Process Completed!!"));
 
         System.out.println("Pipeline is built....");
 
-        future.complete(2);//Evaluates lazily. The pipeline executes from this point on
+        delay(4000);
+        future.complete(0);//Evaluates lazily. The pipeline executes from this point on
     }
 }
