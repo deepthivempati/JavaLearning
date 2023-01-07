@@ -25,3 +25,6 @@ public class CompetebleFeatureBasic {
         return CompletableFuture.supplyAsync(()-> List.of(1,2,3,4,5,6,7,8));
     }
 }
+// exceptions will not be thrown in functional programming so here in this code if any exception is occurred the code simply does not give any output.
+// We should explicitly write the exceptions to handle exceptions.
+// Exception happened at the main thread shows the exception in the console log. but exceptions associated with child or pipeline does not show in the console but still the code executes and does not get any result in output where the exception occurred.
