@@ -29,6 +29,7 @@ public class DataFetchService {
     public String firstNameService(){
         delay(1000);//simulating task completion latency
         logMessage("From firstNameService");
+        //int i = 1 / 0;
         return "john";
     }
 
