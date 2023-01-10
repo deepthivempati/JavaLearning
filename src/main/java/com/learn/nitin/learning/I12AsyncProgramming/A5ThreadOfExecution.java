@@ -19,11 +19,11 @@ public class A5ThreadOfExecution {
         //sequentialProgramRunningInOneThread(dataFetchService);
 
         //Takes time based on the slowest method. total time = Max(method1, method2, method3) + tiny extra processing time
-        AsyncRun(dataFetchService);
+        asyncRun(dataFetchService);
 
     }
 
-    private static void AsyncRun(DataFetchService dataFetchService) throws InterruptedException, ExecutionException {
+    private static void asyncRun(DataFetchService dataFetchService) throws InterruptedException, ExecutionException {
         startTimer();
         // May run in the main thread if all the executions are done,
         // or it may run in a different thread
