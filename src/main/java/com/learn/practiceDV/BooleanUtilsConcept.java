@@ -32,7 +32,6 @@ public class BooleanUtilsConcept {
         System.out.println("result5: "+result7);
         System.out.println("result6: "+result8);
         System.out.println("result6: "+result9);
-
     }
 }
 
