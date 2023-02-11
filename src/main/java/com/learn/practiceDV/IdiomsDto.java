@@ -12,7 +12,6 @@ import java.util.List;
 @Builder
 @ToString
 public class IdiomsDto {
-
     private List<String> IdiomsList;
     private List<Integer> IdiomsCountList;
 }
