@@ -8,8 +8,8 @@
 * The **reword** in place of **pick** to change the required commit.
 
 ## fixes for the issues that might arise while using above git commands
-* If **:**  then type wq to continue
-* If **-- INSERT --**  then type Ctrl c and enter :wq
+* If **:**  then type **wq** to continue
+* If **-- INSERT --**  then type **Ctrl c** and enter **:wq**
 * If you get file is set to **read-only** then enter **Ctrl c** then **:qa!** or **:qa** as suggested on the terminal 
 * If it's gives swap file issue with **E325: ATTENTION** then press **Ctrl c** then enter **D** out of the 4 options among EDIT, READ, DELETE, QUIT. 
 
