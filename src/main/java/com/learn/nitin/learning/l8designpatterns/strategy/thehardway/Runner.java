@@ -17,8 +17,7 @@ public class Runner {
         Supplier<QuickSort> quickSortSupplier = QuickSort::new;
         context.sortAlgo(list, quickSortSupplier.get());
 
-
-
+        context.sortAlgo(list, new IndianSort());
 
     }
 }

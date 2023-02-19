@@ -43,6 +43,8 @@ public class I2Variations {
     private static List<String> forLoopStreams(List<String> list, int count) {
 
         var ret = new ArrayList<String>();
+        var nameList = new ArrayList<String>();
+
         //Functional Style == declarative style
 
         //Works until now, but stooped all of a sudden
@@ -53,9 +55,10 @@ public class I2Variations {
                 .filter(name -> name.length() > 2)
                 .map(nameInLowerCase -> nameInLowerCase.toUpperCase())
                 .limit(count)
-                //.forEach(name -> ret.add(name));//BAD IDEA with ParallelStream - due to shared mutability - this is impure
+                //.forEach(name -> nameList.add(name));//BAD IDEA with ParallelStream - due to shared mutability - this is impure
                 .collect(Collectors.toList());//Thread safe
 
+        nameList.add(null);
         return ret;
     }
 

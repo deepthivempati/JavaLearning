@@ -6,6 +6,4 @@ public interface Interf {
     public String sectionInterface4();
     public String sectionInterface5();
     public String sectionInterface6();
-
-
 }

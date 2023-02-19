@@ -14,10 +14,7 @@ public class StrategyDesign {
         System.out.println(operationWithStreams(list, num -> num %2 == 0));
         System.out.println(operationWithStreams(list, num -> num %2 != 0));
 
-
         System.out.println(list);
-
-
     }
 
     public static Integer operation(List<Integer> list, Predicate<Integer> selector) {

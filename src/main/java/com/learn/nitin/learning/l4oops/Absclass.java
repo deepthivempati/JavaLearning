@@ -1,7 +1,7 @@
 package com.learn.nitin.learning.l4oops;
 
 public abstract class Absclass {
-    public abstract String sectionAbsClass1();
+    public abstract String sectionClass1();
     public abstract String sectionAbsClass2();
     public abstract String sectionAbsClass4();
     public String sectionAbsClass5(){
