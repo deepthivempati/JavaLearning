@@ -28,8 +28,8 @@ var a = SampleData.getSimpleEmployees();
 
 Optional in the argument will force/punish the programmers/users when the method is invoked
 ```java
-        methodName(Optional.of(str));
-        methodName(Optional.empty());
+    methodName(Optional.of(str));
+    methodName(Optional.empty());
 ```
 
 use this
