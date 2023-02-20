@@ -5,7 +5,6 @@ import com.learn.nitin.learning.I11mappings.jackson.model.Address;
 import com.learn.nitin.learning.I11mappings.jackson.model.Employee;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 import java.util.stream.Collectors;
