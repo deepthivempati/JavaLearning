@@ -1,6 +1,7 @@
 package com.learn.nitin.learning.I11mappings.jackson.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.learn.nitin.learning.I11mappings.jackson.filter.EmptyListFilter;
 import lombok.*;
 
 @NoArgsConstructor

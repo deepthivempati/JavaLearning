@@ -19,22 +19,20 @@ public class MapperRunner {
 
         List<Address> emptyFilteredAddresses = employee.getAddresses()
                 .stream()
-                .filter(singleAddress -> {
-                    return filterAddress(singleAddress);
-                })
+                .filter(singleAddress -> filterAddress(singleAddress))
                 .collect(Collectors.toList());
 
-        employee.setAddresses(emptyFilteredAddresses);
+        //employee.setAddresses(emptyFilteredAddresses);
         String convertedJson = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(employee);
 
         System.out.println(convertedJson);
     }
 
     private static boolean filterAddress(Address singleAddress) {
-        return (null != singleAddress.getAddressLine1() ||
-                null != singleAddress.getAddressLine2() ||
-                null != singleAddress.getCity() ||
-                null != singleAddress.getState() ||
+        return (null != singleAddress.getAddressLine1() &&
+                null != singleAddress.getAddressLine2() &&
+                null != singleAddress.getCity() &&
+                null != singleAddress.getState() &&
                 null != singleAddress.getZip()
         );
     }
