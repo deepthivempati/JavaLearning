@@ -1,4 +1,4 @@
-package com.learn.practiceDV.functionalInterfaces;
+package com.learn.deepthi.functionalInterfaces;
 
 import com.learn.nitin.utilities.SampleData;
 import com.learn.nitin.utilities.entity.Employee;

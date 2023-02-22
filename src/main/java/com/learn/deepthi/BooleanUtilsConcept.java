@@ -1,4 +1,4 @@
-package com.learn.practiceDV;
+package com.learn.deepthi;
 import org.apache.commons.lang3.BooleanUtils;
 public class BooleanUtilsConcept {
     public static void main(String[] args) {

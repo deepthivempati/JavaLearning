@@ -1,6 +1,6 @@
-package com.learn.practiceDV;
+package com.learn.deepthi;
 
-import com.learn.practiceDV.practiceEntity.Mobiles;
+import com.learn.deepthi.practiceEntity.Mobiles;
 
 import java.util.ArrayList;
 import java.util.List;

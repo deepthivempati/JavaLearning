@@ -1,4 +1,4 @@
-package com.learn.practiceDV.Collectors;
+package com.learn.deepthi.Collectors;
 
 import com.learn.nitin.utilities.SampleData;
 import com.learn.nitin.utilities.entity.EmployeeSimple;

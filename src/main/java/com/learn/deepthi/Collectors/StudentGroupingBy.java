@@ -1,10 +1,10 @@
-package com.learn.practiceDV.Collectors;
+package com.learn.deepthi.Collectors;
 
 import java.util.Comparator;
 import java.util.Map;
 import java.util.Optional;
 
-import static com.learn.practiceDV.Collectors.StudentPartitioningBy.students;
+import static com.learn.deepthi.Collectors.StudentPartitioningBy.students;
 import static java.util.stream.Collectors.*;
 
 // finding the student with the best and worst grade in respective city
