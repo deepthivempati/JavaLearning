@@ -22,7 +22,7 @@ public class Employee {
     @JsonProperty("name")
     private String name;
     @JsonProperty("dateOfBirth")
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy HH:mm:ss")
     @JsonInclude(value = JsonInclude.Include.CUSTOM, valueFilter = DateOfBirthFilter.class)
     private Date dob;
     @JsonProperty("phones")
@@ -31,4 +31,5 @@ public class Employee {
     @JsonProperty("addresses")
     @JsonInclude(value = JsonInclude.Include.CUSTOM, valueFilter = EmptyListFilter.class)
     private List<Address> addresses;
+
 }
