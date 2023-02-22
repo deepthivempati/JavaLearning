@@ -1,4 +1,4 @@
-package com.learn.practiceDV.Collectors;
+package com.learn.deepthi.Collectors;
 
 import java.util.Arrays;
 import java.util.List;

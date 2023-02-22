@@ -1,11 +1,10 @@
-package com.learn.practiceDV.Collectors;
+package com.learn.deepthi.Collectors;
 
 import java.util.Comparator;
 import java.util.Map;
 import java.util.function.Function;
-import java.util.stream.Collectors;
 
-import static com.learn.practiceDV.Collectors.StudentPartitioningBy.students;
+import static com.learn.deepthi.Collectors.StudentPartitioningBy.students;
 import static java.util.function.BinaryOperator.maxBy;
 import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.reducing;

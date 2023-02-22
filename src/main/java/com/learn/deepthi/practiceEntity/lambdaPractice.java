@@ -1,4 +1,4 @@
-package com.learn.practiceDV.practiceEntity;
+package com.learn.deepthi.practiceEntity;
 
 
 interface square {

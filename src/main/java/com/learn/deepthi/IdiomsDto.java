@@ -1,4 +1,4 @@
-package com.learn.practiceDV;
+package com.learn.deepthi;
 
 import lombok.Builder;
 import lombok.Getter;

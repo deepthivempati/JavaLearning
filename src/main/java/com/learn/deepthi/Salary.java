@@ -1,4 +1,4 @@
-package com.learn.practiceDV;
+package com.learn.deepthi;
 
 import com.learn.nitin.utilities.entity.EmployeeSimple;
 import com.learn.nitin.utilities.SampleData;
